@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Resume Builder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Advanced Resume Builder</h1>
+        <form id="resume-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" required></textarea>
+
+            <label for="linkedin">LinkedIn:</label>
+            <input type="url" id="linkedin">
+
+            <label for="github">GitHub:</label>
+            <input type="url" id="github">
+
+            <label for="portfolio">Portfolio:</label>
+            <input type="url" id="portfolio">
+
+            <label for="experience">Work Experience:</label>
+            <textarea id="experience" required></textarea>
+
+            <label for="education">Education:</label>
+            <textarea id="education" required></textarea>
+
+            <label for="skills">Skills:</label>
+            <textarea id="skills" required></textarea>
+
+            <label for="projects">Projects:</label>
+            <textarea id="projects"></textarea>
+
+            <label for="languages">Languages Known:</label>
+            <textarea id="languages"></textarea>
+
+            <label for="certifications">Certifications:</label>
+            <textarea id="certifications"></textarea>
+
+            <label for="achievements">Achievements:</label>
+            <textarea id="achievements"></textarea>
+
+            <label for="hobbies">Hobbies:</label>
+            <textarea id="hobbies"></textarea>
+
+            <label for="references">References:</label>
+            <textarea id="references"></textarea>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+
+
+        <h2>Resume Preview</h2>
+        <div id="resume-preview"></div>
+        <button id="download-btn" class="button-57" role="button" style="display: none;">
+            <span class="text">Download as PDF</span>
+            <span>Save Resume</span>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</body>
+
+</html>
